@@ -23,6 +23,8 @@ public:
 	std::string getNickName(void);
 	std::string getPhoneNumber(void);
 	std::string getDarkestSecret(void);
+
+	int flag;
 };
 
 class Phonebook{
