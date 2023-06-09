@@ -4,6 +4,7 @@ int main()
 {
 	Phonebook p;
 
+	p.add = 0;
 	p.i = 0;
 	std::string tmp;
 
