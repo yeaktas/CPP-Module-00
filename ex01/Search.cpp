@@ -2,7 +2,7 @@
 
 void Phonebook::SEARCH(){
 	for (int i = 0; persons[i].flag == 1; i++){
-		std::cout << i+1 << "|";
+		std::cout << i + 1 << "|";
 		if(persons[i].getName().length() > 10)
 			std::cout << std::setw(10) << persons[i].getName().substr(0,9) + "." << "|";
 		else
@@ -20,18 +20,18 @@ void Phonebook::SEARCH(){
 
 	int select = 0;
 
-	std::cout << "Choose a number between 1 and " << i << " : ";
+	std::cout << "Choose a number between 1 and " << add << " : ";
 	std::cin >> select;
 
-	while(select > i || select < 1)
+	while(select > add || select < 1)
 	{
-		std::cout << std::endl << "Choose a number between 1 and " << i << " : ";
+		std::cout << std::endl << "Choose a number between 1 and " << add << " : ";
 		std::cin >> select;
 	}
-	std::cout << "Name         : "<< persons[select - 1].getName() << std::endl;
-	std::cout << "Surname      : "<< persons[select - 1].getSurname() << std::endl;
-	std::cout << "Nickname     : "<< persons[select - 1].getNickName() << std::endl;
-	std::cout << "Phone Number : "<< persons[select - 1].getPhoneNumber() << std::endl;
-	std::cout << "D. Secret    : "<< persons[select - 1].getDarkestSecret() << std::endl;
+	std::cout << "Name         :" << persons[select - 1].getName() << std::endl;
+	std::cout << "Surname      :" << persons[select - 1].getSurname() << std::endl;
+	std::cout << "Nickname     :" << persons[select - 1].getNickName() << std::endl;
+	std::cout << "Phone Number :" << persons[select - 1].getPhoneNumber() << std::endl;
+	std::cout << "D. Secret    :" << persons[select - 1].getDarkestSecret() << std::endl;
 	std::cin.ignore();
 }

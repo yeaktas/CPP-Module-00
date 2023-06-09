@@ -51,4 +51,6 @@ void Phonebook::ADD(){
 	persons[i].flag = 1;
 	i++;
 	i %= 8;
+	if(add < 8)
+		add++;
 }

@@ -33,6 +33,7 @@ class Phonebook{
 	
 	Contact persons[8];
 	int i;
+	int add;
 
 	void ADD();
 	void SEARCH();
